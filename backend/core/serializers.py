@@ -25,6 +25,7 @@ class LessonSerializer(serializers.Serializer):
     content = serializers.CharField()
     video_url = serializers.URLField(required=False, allow_blank=True)
     created_at = serializers.DateTimeField(read_only=True)
+    # hello
 
 class ExerciseSerializer(serializers.Serializer):
     id = serializers.UUIDField(read_only=True)
